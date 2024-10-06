@@ -1,12 +1,71 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Semantic Navbar and Audio Section</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        h2 {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        section {
+            padding: 20px;
+            margin: 0 auto;
+            max-width: 600px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        audio {
+            display: block;
+            width: 100%;
+            margin: 10px 0;
+        }
+
+        /* Navbar Styles */
+        nav {
+            background-color: #333;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <!-- Navigation Bar -->
+    <!-- Part 1: Navbar -->
     <nav>
         <ul>
             <li><a href="#home">Home</a></li>
@@ -15,15 +74,14 @@
         </ul>
     </nav>
 
-    <!-- Audio Section -->
+    <!-- Part 2: Audio Section -->
     <section>
-        <h2>3 random audios</h2>
+        <h2>3 Random Audios</h2>
         <audio controls>
             <source src="http://commondatastorage.googleapis.com/codeskulptor-demos/DDR_assets/Kangaroo_MusiQue_-_The_Neverwritten_Role_Playing_Game.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
         </audio>
-        <!-- Add two more audio sections here with the given URLs. -->
-		        <audio controls>
+        <audio controls>
             <source src="http://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg" type="audio/ogg">
             Your browser does not support the audio element.
         </audio>
@@ -31,8 +89,6 @@
             <source src="http://codeskulptor-demos.commondatastorage.googleapis.com/pang/paza-moduless.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
         </audio>
-
     </section>
 </body>
 </html>
-
